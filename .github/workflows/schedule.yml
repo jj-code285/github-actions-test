@@ -2,9 +2,9 @@ name: GitHubActions Job Schedule
 
 on:
   push:
-    branches: [ master ]
+    branches: [ develop ]
   pull_request:
-    branches: [ master ]
+    branches: [ develop ]
   schedule: ## Schedule the job to run at 12.am daily.
     - cron: '0 0 * * *'
    # - cron: '0 0 * * *'
