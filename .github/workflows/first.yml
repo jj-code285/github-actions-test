@@ -17,8 +17,5 @@ jobs:   # for each workflows we can have one or more jobs
            import platform
            print(platform.processor())
         shell: python
-
-      -     
-
        
       
