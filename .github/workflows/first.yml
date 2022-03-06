@@ -3,13 +3,13 @@ name : Shell commands  #name of the workflow
 on: [push]  # which event we want to trigger, can be one event or array of events we can mention
  
 jobs:   # for each workflows we can have one or more jobs
-  run-shell-command:
-    runs-on: ubuntu-latest
-    steps: # steps can perform action
+  run-shell-command:  # object of job
+    runs-on: ubuntu-latest  # each job will run on VM so it can be linux,windowns,MacOS etc
+    steps: # steps can perform action and with the help of steps i am creating array and echoing a tring
       - name: echo a string
         run: echo "Hello world"
       - name: multi-line script
-        run:  |
+        run:  | # running two commands using pipe in yml
            node -v
            npm -v
 
